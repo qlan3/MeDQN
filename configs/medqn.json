@@ -1,0 +1,41 @@
+{
+  "env": [
+    {
+      "name": ["QbertNoFrameskip-v4", "BattleZoneNoFrameskip-v4", "DoubleDunkNoFrameskip-v4", "NameThisGameNoFrameskip-v4", "PhoenixNoFrameskip-v4"],
+      "scale_obs": [0],
+      "train_num": [1],
+      "test_num": [5]
+    }
+  ],
+  "device": ["cuda"],
+  "agent": [
+    {
+      "name": ["MeDQN_Real"],
+      "eps_steps": [1e6],
+      "eps_start": [1.0],
+      "eps_end": [0.05],
+      "eps_test": [0.0],
+      "consod_start": [0.01],
+      "consod_end": [4, 2],
+      "consod_epoch": [2, 1]
+    }
+  ],
+  "save_model": [false],
+  "show_progress": [false],
+  "resume_from_log": [true],
+  "save_interval": [5],
+  "epoch": [125],
+  "n_step": [3],
+  "step_per_epoch": [1e5],
+  "step_per_collect": [-1],
+  "update_per_step": [0.1, 0.05, 0.025],
+  "batch_size": [32],
+  "target_update_steps": [500],
+  "buffer_size": [1e5],
+  "frames_stack": [4],
+  "optimizer": [{"name": ["Adam"], "kwargs": [{"lr": [1e-4]}]}],
+  "discount": [0.99],
+  "seed": [1],
+  "gradient_clip": [-1],
+  "generate_random_seed": [true]
+}

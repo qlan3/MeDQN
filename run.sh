@@ -1,0 +1,2 @@
+parallel --ungroup --jobs procfile python main.py --config_file ./configs/dqn.json --config_idx {1} ::: $(seq 1 50)
+parallel --ungroup --jobs procfile python main.py --config_file ./configs/medqn.json --config_idx {1} ::: $(seq 1 300)

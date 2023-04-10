@@ -1,0 +1,12 @@
+ale_py
+envpool
+gym
+matplotlib
+numpy
+opencv_python
+pandas
+psutil
+seaborn
+tensorboard
+tianshou
+tqdm
