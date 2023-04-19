@@ -3,6 +3,12 @@
 This is the official implementation of *MeDQN* algorithm, introduced in our paper [Memory-efficient Reinforcement Learning with Value-based Knowledge Consolidation](https://arxiv.org/abs/2205.10868).  
 Note that this codebase is for Atari experiments only. Please check the implementation of MeDQN in [Explorer](https://github.com/qlan3/Explorer) for other games.
 
+Catastrophic forgetting prevents an agent from continual learning. In deep RL, this problem is largely masked by using a large replay buffer.
+In this work, we show that by reducing forgetting with value-based lnowledge consolidation, we can improve memory efficiency, sample efficiency, and computational efficiency all together.
+Specifically, in Atari games, our method (MeDQN) can reduce the memory size of the replay buffer in DQN from 7GB to 0.7GB, while achieving comparable or better performance, higher sample efficiency, and faster training speed.
+
+Please share it with anyone who might be interested. Email me or submit an issue if you have any questions!
+
 Plot of median score on each individual Atari game for each agent (`m` is the size of the replay buffer):
 
 ![learning curves](results/atari.png)
