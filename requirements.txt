@@ -1,7 +1,7 @@
 opencv_python==4.5.1.48
 tianshou==0.4.10
 envpool==0.6.6
-torch==1.12.1
+torch>=1.12.1
 gym==0.25.1
 ale_py
 matplotlib
